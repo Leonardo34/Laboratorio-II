@@ -48,7 +48,7 @@ public class BookCatalog implements IBookCatalog{
 		if (i < 0 || i >= index) {
 			System.out.println("Index invalido");
 		} else {
-			for (int j = i; j < index; j++) {
+			for (int j = i; j < index - 1; j++) {
 				books[j] = books[j + 1];
 			}
 			books[--index] = null;
